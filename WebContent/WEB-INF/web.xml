@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>squeak-web</display-name>
+	<welcome-file-list>
+		<welcome-file>home</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>NovaContaController</servlet-name>
+		<servlet-class>com.squeak.controller.NovaContaController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NovaContaController</servlet-name>
+		<url-pattern>/novaconta</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.squeak.controller.LoginController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.squeak.controller.HomeController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>com.squeak.controller.LogoutController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MensagemController</servlet-name>
+		<servlet-class>com.squeak.controller.MensagemController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MensagemController</servlet-name>
+		<url-pattern>/mensagem</url-pattern>
+	</servlet-mapping>
+
+</web-app>
